@@ -1,0 +1,223 @@
+{
+ "shape": [
+  2000,
+  16
+ ],
+ "missing": {
+  "weight_kg": 25
+ },
+ "desc": [
+  {
+   "index": "distance_km",
+   "count": 2000.0,
+   "mean": 1383.84,
+   "std": 1309.93,
+   "min": 21.7,
+   "25%": 494.22,
+   "50%": 951.15,
+   "75%": 1743.85,
+   "max": 5980.1,
+   "median": 951.15,
+   "skew": 1.59
+  },
+  {
+   "index": "weight_kg",
+   "count": 2000.0,
+   "mean": 686.66,
+   "std": 647.59,
+   "min": 19.1,
+   "25%": 288.18,
+   "50%": 498.4,
+   "75%": 866.85,
+   "max": 5900.0,
+   "median": 498.4,
+   "skew": 3.01
+  },
+  {
+   "index": "volume_m3",
+   "count": 2000.0,
+   "mean": 3.83,
+   "std": 3.8,
+   "min": 0.08,
+   "25%": 1.53,
+   "50%": 2.72,
+   "75%": 4.83,
+   "max": 37.92,
+   "median": 2.72,
+   "skew": 3.35
+  },
+  {
+   "index": "transit_hours",
+   "count": 2000.0,
+   "mean": 53.01,
+   "std": 67.19,
+   "min": 5.7,
+   "25%": 16.5,
+   "50%": 24.9,
+   "75%": 47.12,
+   "max": 350.3,
+   "median": 24.9,
+   "skew": 2.16
+  },
+  {
+   "index": "delay_hours",
+   "count": 2000.0,
+   "mean": -8.75,
+   "std": 14.07,
+   "min": -68.1,
+   "25%": -8.6,
+   "50%": -4.7,
+   "75%": -1.8,
+   "max": 13.3,
+   "median": -4.7,
+   "skew": -2.29
+  },
+  {
+   "index": "cost_usd",
+   "count": 2000.0,
+   "mean": 1991.43,
+   "std": 4103.57,
+   "min": 30.0,
+   "25%": 437.46,
+   "50%": 719.74,
+   "75%": 1105.19,
+   "max": 46419.74,
+   "median": 719.74,
+   "skew": 4.29
+  }
+ ],
+ "on_time_rate": 83.8,
+ "mode_stats": [
+  {
+   "mode": "Air",
+   "shipments": 243,
+   "avg_transit": 16.64,
+   "avg_cost": 11211.87,
+   "cpk": 19.78,
+   "on_time": 0.85
+  },
+  {
+   "mode": "Rail",
+   "shipments": 316,
+   "avg_transit": 46.87,
+   "avg_cost": 658.59,
+   "cpk": 1.23,
+   "on_time": 0.91
+  },
+  {
+   "mode": "Road",
+   "shipments": 1089,
+   "avg_transit": 20.64,
+   "avg_cost": 658.37,
+   "cpk": 1.13,
+   "on_time": 0.83
+  },
+  {
+   "mode": "Sea",
+   "shipments": 352,
+   "avg_transit": 183.78,
+   "avg_cost": 946.89,
+   "cpk": 1.67,
+   "on_time": 0.8
+  }
+ ],
+ "corr_dist_cost": 0.36,
+ "corr_dist_transit": 0.83,
+ "corr_wt_cost": 0.17,
+ "corr_wt_vol": 0.96,
+ "corr_delay_cost": 0.09,
+ "cost_outliers": 263,
+ "peak_delay": -0.2,
+ "off_delay": -11.6,
+ "peak_ot": 58.2,
+ "off_ot": 92.2,
+ "ttest_p": 1.6691619131158709e-137,
+ "ttest_t": 27.2,
+ "peak_cost": 2010.6,
+ "off_cost": 1985.1,
+ "road_region": [
+  {
+   "region": "Central",
+   "ot": 0.892,
+   "delay": -4.225
+  },
+  {
+   "region": "East",
+   "ot": 0.568,
+   "delay": -0.263
+  },
+  {
+   "region": "North",
+   "ot": 0.908,
+   "delay": -4.235
+  },
+  {
+   "region": "South",
+   "ot": 0.859,
+   "delay": -3.769
+  },
+  {
+   "region": "West",
+   "ot": 0.866,
+   "delay": -3.912
+  }
+ ],
+ "carrier": [
+  {
+   "carrier": "EcoShip",
+   "ot": 0.853,
+   "cost": 1761.428
+  },
+  {
+   "carrier": "FastTrans",
+   "ot": 0.822,
+   "cost": 2033.617
+  },
+  {
+   "carrier": "QuickMove",
+   "ot": 0.853,
+   "cost": 2203.462
+  },
+  {
+   "carrier": "SafeHaul",
+   "ot": 0.821,
+   "cost": 1956.293
+  }
+ ],
+ "anova_p": 0.005557113458369378,
+ "reg": {
+  "slope": 1.125,
+  "intercept": 434.1,
+  "r2": 0.129
+ },
+ "ot_pivot": {
+  "Air": {
+   "Central": 90.2,
+   "East": 82.4,
+   "North": 82.4,
+   "South": 79.5,
+   "West": 89.1
+  },
+  "Rail": {
+   "Central": 92.5,
+   "East": 90.2,
+   "North": 87.5,
+   "South": 89.7,
+   "West": 92.2
+  },
+  "Road": {
+   "Central": 89.2,
+   "East": 56.8,
+   "North": 90.8,
+   "South": 85.9,
+   "West": 86.6
+  },
+  "Sea": {
+   "Central": 81.4,
+   "East": 79.7,
+   "North": 76.5,
+   "South": 83.7,
+   "West": 78.3
+  }
+ }
+}
